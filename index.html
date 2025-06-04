@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision Global School</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="description" content="Vision Global School – Committed to academic excellence and holistic education in Aligarh.">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+ <style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.411);
+    text-align: center;
+    background: url('images/unnamed1.webp') center center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    text-shadow: 0px 0px 0px #000;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+    z-index: 0;
+  }
+
+  .hero .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .display-4 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    color: aliceblue;
+  }
+
+  .custom-green {
+    background-color: rgb(98, 98, 192); /* Change as needed */
+    color: white;
+    border: none;
+  }
+
+  .custom-green:hover {
+    background-color: #d0dbd2; /* Lighter/different shade on hover */
+  }
+
+  .navbar-nav .nav-link {
+    color: white !important;
+  }
+
+  #contact a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  #contact a:hover {
+    text-decoration: underline;
+  }
+
+  .section-title {
+    margin: 60px 0 30px;
+    text-align: center;
+  }
+
+  .teacher img {
+    border-radius: 50%;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  footer {
+    background: #0c0c0c;
+    color: white;
+    padding: 20px 0;
+  }
+</style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+      <img src="images/Logo.jpg" alt="School Logo" width="50" />
+      <a class="navbar-brand" href="#" style="padding-left: 10px; font-size: 40px; font-family: 'Arial'; margin-top: 5px;">Vision Global School</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#teachers">Teachers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+
+  <section class="hero" id="hero-section">
+    <div class="container">
+      <h1 class="display-4">Welcome to Vision Global School</h1>
+      <p class="lead">Empowering students to become lifelong learners</p>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section id="about" class="container py-5">
+    <div class="section-title">
+      <h2>About Us</h2>
+      <p>We are committed to excellence in education.</p>
+    </div>
+    <p class="text-center">Vision Institute of Technology - Aligarh (VIT-A) is recognized by the AICTE and affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow (formerly UPTU) under AKTU Code 524. Additionally, VIT-Kanpur is affiliated with the Board of Technical Education, Lucknow, for Polytechnic (Diploma) programs (BTE Code 3343) and is also associated with the NCVT for ITI courses (PU09900776).
+Vision Institute of Technology (VIT), Aligarh, established in 2009, is a private engineering college approved by AICTE and affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow. Situated on a 25-acre campus along the Aligarh-Agra Highway, VIT offers undergraduate (B.Tech) and diploma (Polytechnic) programs in disciplines such as Computer Science, Mechanical, Civil, Electrical & Electronics, Electronics & Communication, Agricultural Engineering, and emerging fields like Artificial Intelligence and Machine Learning. The institute emphasizes a blend of academic rigor and practical experience, supported by modern laboratories, experienced faculty, and a dedicated placement cell that facilitates industry connections and career opportunities for students.</p>
+  </section>
+<section id="features" class="features py-5 text-center bg-light container">
+  <div class="container">
+    <h2 class="mb-5">Our Features</h2>
+    <div class="row">
+      <!-- Expert Teachers Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+            <i class="fa fa-chalkboard-teacher fa-3x mb-3"></i>
+            <h5 class="card-title">Expert Teachers</h5>
+            <p class="card-text">Highly qualified and experienced faculty committed to excellence.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#teachersModal">View More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Digital Classrooms Card -->
+      <div class="col-md-4 mb-4">
+  <div class="card h-100 shadow">
+    <div class="card-body text-center">
+      <i class="fa fa-laptop-code fa-3x mb-3"></i>
+      <h5 class="card-title">Digital Classrooms</h5>
+      <p class="card-text">Smart classrooms equipped with modern digital tools.</p>
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#classroomModal">View More</button>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="classroomModal" tabindex="-1" aria-labelledby="classroomModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="classroomModalLabel">Digital Classrooms</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Bootstrap Carousel -->
+        <div id="classroomCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/v1.jpg" class="d-block w-100" alt="Classroom 1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/v2.jpg" class="d-block w-100" alt="Classroom 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/v3.jpg" class="d-block w-100" alt="Classroom 3">
+            </div>
+            <div class="carousel-item">
+              <img src="images/v4.jpg" class="d-block w-100" alt="Classroom 4">
+            </div>
+            <div class="carousel-item">
+              <img src="images/v5.jpg" class="d-block w-100" alt="Classroom 5">
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#classroomCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#classroomCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Safe Campus Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+            <i class="fa fa-user-shield fa-3x mb-3"></i>
+            <h5 class="card-title">Safe Campus</h5>
+            <p class="card-text">Secure and friendly learning environment for every child.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#safetyModal">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teachers Modal -->
+<div class="modal fade" id="teachersModal" tabindex="-1" aria-labelledby="teachersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="teachersModalLabel">Our Teachers</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item">Mr. A. Sharma – M.Sc. (Maths), B.Ed. – Mathematics</li>
+          <li class="list-group-item">Ms. R. Verma – M.A. (English), B.Ed. – English</li>
+          <li class="list-group-item">Mr. S. Khan – M.Sc. (Physics), B.Ed. – Physics</li>
+          <li class="list-group-item">Ms. P. Singh – M.Sc. (Chemistry), B.Ed. – Chemistry</li>
+          <li class="list-group-item">Mr. M. Kumar – M.A. (History), B.Ed. – History & Civics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Classroom Modal -->
+<div class="modal fade" id="classroomModal" tabindex="-1" aria-labelledby="classroomModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="classroomModalLabel">Digital Classrooms</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="images/classroom1.jpg" alt="Classroom 1" class="img-fluid mb-3">
+        <img src="images/classroom2.jpg" alt="Classroom 2" class="img-fluid mb-3">
+        <img src="images/classroom3.jpg" alt="Classroom 3" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Safety Modal -->
+<div class="modal fade" id="safetyModal" tabindex="-1" aria-labelledby="safetyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="safetyModalLabel">Campus Safety Measures</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item">24/7 CCTV Surveillance</li>
+          <li class="list-group-item">Trained Security Personnel</li>
+          <li class="list-group-item">Fire Safety Equipment in all Buildings</li>
+          <li class="list-group-item">Emergency Medical Care & First Aid</li>
+          <li class="list-group-item">Visitor ID and Entry Log System</li>
+          <li class="list-group-item">Student Pick-Up Authorization Rules</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FontAwesome (for icons) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+  <!-- Features -->
+  
+
+  <!-- Gallery -->
+  <section id="gallery" class="bg-light py-5">
+    <div class="container">
+      <div class="section-title">
+        <h2>School Gallery</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <img src="images\unnamed2.webp" width="300" height="225" class="gallery"></div>
+        <div class="col-md-4"><img src="images\unnamed12.webp" width="300" height="225"class="gallery" /></div>
+        <div class="col-md-4"><img src="images\unnamed123.webp"width="300" height="225"class="gallery" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+
+<!-- Section Title -->
+    <div class="section-title text-center mb-5">
+      <h2>Contact Us</h2>
+    </div>
+
+    <!-- Address and Map Row -->
+    <div class="row mb-4">
+      <!-- Address Column -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h5>Vision Global School</h5>
+        <p><strong>Address:</strong><br> Shahpur Madrak, Aligarh<br>Near Manglayatan Dham, Pin Code 202150</p>
+        <p><strong>Email:</strong> <a href="mailto:amarendrachaudhary24@gmail.com">amarendrachaudhary24@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:9015165617">9015165617</a></p>
+
+        <!-- Query Button -->
+        <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#queryModal">
+          Send Query
+        </button>
+      </div>
+
+      <!-- Google Map Column -->
+      <div class="col-md-6">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3530.229415378623!2d78.0823348!3d27.771904499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397498722789f7f1%3A0xdca5f1457d6dfd3e!2sVision%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1749024174294!5m2!1sen!2sin" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Query Form Modal -->
+<div class="modal fade" id="queryModal" tabindex="-1" aria-labelledby="queryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="queryModalLabel">Send Us a Message</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="contact" class="form-label">Contact Number</label>
+            <input type="tel" class="form-control" id="contact" placeholder="Enter your contact number" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Type your message here..." required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Send</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Footer Section -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025 Vision Global School. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Background Image Rotation Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = [
+      "images/unnamed1.webp",
+      "images/unnamed2.webp",
+      "images/unnamed12.webp",
+      "images/unnamed123.webp"
+    ];
+
+    let index = 0;
+    const hero = document.getElementById("hero-section");
+
+    function changeBackground() {
+      hero.style.backgroundImage = `url('${images[index]}')`;
+      index = (index + 1) % images.length;
+    }
+
+    changeBackground(); // Set the first image
+    setInterval(changeBackground, 2000); // Change every 2 seconds
+  });
+</script>
+
+</body>
+</html>
